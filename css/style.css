@@ -29,10 +29,20 @@ main {
     min-height: 100vh;
 }
 
+.container-numbers {
+    max-width: 1200px;
+    margin: auto;
+}
+
 #numbers {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     color: white;
+    background-color: #1389b2;
+    border: #083b4c 10px solid;
+    margin-inline: 50px;
 }
+
+
 

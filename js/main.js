@@ -10,25 +10,31 @@ BONUS 2: Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a s
 Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna. */
 
 let i = 0;
-// Creation Board
-
 const div = document.getElementById("numbers");
+/* Scrivi un programma che stampi in console i numeri da 1 a 100 */
 for ( let i = 1; i <= 100; i++) {
     const element = document.createElement(`div`);
     element.innerHTML = i;
     div.append(element);
+    /* Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz */
     if(((i % 3) == 0) && ((i % 5) == 0)){
+        console.log(`FizzBuzz`)
         element.innerHTML = "FizzBuzz"
     }
+    /* i multipli di 3 stampi “Fizz” */
     else if ((i % 3) == 0){
+        console.log(`Fizz`)
         element.innerHTML = "Fizz"
     }
+    /* i multipli di 5 stampi “Buzz */
     else if ((i % 5) == 0){
+        console.log(`Buzz`)
         element.innerHTML = "Buzz"
     }
     else {
         console.log(i);
     }
+    
 }
 
 
