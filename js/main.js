@@ -9,23 +9,26 @@ BONUS 1: Crea un container nel DOM , aggiungendo (attraverso la funzione append(
 BONUS 2: Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
 Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna. */
 
+let i = 0;
+// Creation Board
 
+const div = document.getElementById("numbers");
 for ( let i = 1; i <= 100; i++) {
-    
+    const element = document.createElement(`div`);
+    element.innerHTML = i;
+    div.append(element);
     if(((i % 3) == 0) && ((i % 5) == 0)){
-        console.log(`fizzbuzz`);
+        element.innerHTML = "FizzBuzz"
     }
     else if ((i % 3) == 0){
-        console.log(`fizz`);
+        element.innerHTML = "Fizz"
     }
     else if ((i % 5) == 0){
-        console.log(`buzz`);
+        element.innerHTML = "Buzz"
     }
     else {
         console.log(i);
     }
-    
-    
 }
 
 
