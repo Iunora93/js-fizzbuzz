@@ -38,10 +38,17 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    color: white;
+    color: white;   
+}
+
+.board__number {
+    height: 3.75rem;
+    width: 3.75rem;
     background-color: #1389b2;
-    border: #083b4c 10px solid;
-    margin-inline: 50px;
+    color: #fff;    
+    text-align: center;
+    line-height: 3.75rem;   
+    margin: 5px 5px;
 }
 
 
